@@ -9,76 +9,76 @@
 </head>
 
 <body>
-    <h1>Formulaire d'inscription</h1>
-    <form action="">
-        <div>
-            <label for="Nom">Nom :</label>
-            <input type="text" id="Nom" />
-        </div>
-        <div>
-            <label for="Prenom">Prenom :</label>
-            <input type="text" id="Prenom" />
-        </div>
-        <div>
-            <label for="Email">Email :</label>
-            <input type="email" id="Email" />
-        </div>
-        <div>
-            <legend>Sexe:</legend>
-            <input type="radio" id="Masculin" name="drone" value="Masculin">
-            <label for="Masculin">Masculin</label>
-            <input type="radio" id="Feminin" name="drone" value="Feminin">
-            <label for="Feminin">Feminin</label>
-            <input type="radio" id="Indefini" name="drone" value="Indefini">
-            <label for="Indefini">Indefini</label>
-        </div>
-        <div><label for="Photo">Photo :</label>
-            <input type="file" id="Photo" />
-        </div>
-        <div><label for="country-select">Pays</label>
-
-            <select name="country" id="country-select">
-                <option value="">--Choisir un pays--</option>
-                <option value="France">France</option>
-                <option value="Espagne">Espagne</option>
-                <option value="Royaume-Uni">Royaume-Uni</option>
-            </select>
-        </div>
-        <div><label for="Langages front">Langages préférés:
-                <select name="Langages front" multiple size="4" id="Langages front">
-                    <optgroup label="Langages front">
-                        <option value="HTML">HTML</option>
-                        <option value="CSS">CSS</option>
-                        <option value="JavaScript">JavaScript</option>
-                    </optgroup>
-                    <optgroup label="Langages back">
-                        <option value="PhP">PhP</option>
-                        <option value="Python">Python</option>
-                        <option value="Java EE">Java EE</option>
-                    </optgroup>
+    <fieldset>
+        <legend>Formulaire d'inscription</legend>
+        <form action="">
+            <div>
+                <label for="Nom">Nom :</label>
+                <input type="text" id="Nom" />
+            </div>
+            <div>
+                <label for="Prenom">Prenom :</label>
+                <input type="text" id="Prenom" />
+            </div>
+            <div>
+                <label for="Email">Email :</label>
+                <input type="email" id="Email" />
+            </div>
+            <div>
+                <legend>Sexe:</legend>
+                <input type="radio" id="Masculin" name="drone" value="Masculin">
+                <label for="Masculin">Masculin</label>
+                <input type="radio" id="Feminin" name="drone" value="Feminin">
+                <label for="Feminin">Feminin</label>
+                <input type="radio" id="Indefini" name="drone" value="Indefini">
+                <label for="Indefini">Indefini</label>
+            </div>
+            <div><label for="Photo">Photo :</label>
+                <input type="file" id="Photo" />
+            </div>
+            <div><label for="country-select">Pays</label>
+                <select name="country" id="country-select">
+                    <option value="">--Choisir un pays--</option>
+                    <option value="France">France</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Royaume-Uni">Royaume-Uni</option>
                 </select>
-            </label></div>
-        <div>Pour faire plusieurs choix maintenir la touche ctrl enfoncée.</div>
-        <div>
-            <legend>Domaine d'activités:</legend>
-
-            <div>
-                <input type="checkbox" id="Informatique" name="Informatique">
-                <label for="Informatique">Informatique</label>
-                <input type="checkbox" id="Gestion" name="Gestion">
-                <label for="Gestion">Gestion</label>
-                <input type="checkbox" id="Pédagogie" name="Pédagogie">
-                <label for="Pédagogie">Pédagogie</label>
             </div>
+            <div><label for="Langages front">Langages préférés:
+                    <select name="Langages front" multiple size="4" id="Langages front">
+                        <optgroup label="Langages front">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </optgroup>
+                        <optgroup label="Langages back">
+                            <option value="PhP">PhP</option>
+                            <option value="Python">Python</option>
+                            <option value="Java EE">Java EE</option>
+                        </optgroup>
+                    </select>
+                </label></div>
+            <div>Pour faire plusieurs choix maintenir la touche ctrl enfoncée.</div>
             <div>
-                <button type="submit">
-                    Envoyer
-                </button>
-                <button type="reset">
-                    Effacer
-                </button>
-            </div>
-    </form>
+                <legend>Domaine d'activités:</legend>
+                <div>
+                    <input type="checkbox" id="Informatique" name="Informatique">
+                    <label for="Informatique">Informatique</label>
+                    <input type="checkbox" id="Gestion" name="Gestion">
+                    <label for="Gestion">Gestion</label>
+                    <input type="checkbox" id="Pédagogie" name="Pédagogie">
+                    <label for="Pédagogie">Pédagogie</label>
+                </div>
+                <div>
+                    <button type="submit">
+                        Envoyer
+                    </button>
+                    <button type="reset">
+                        Effacer
+                    </button>
+                </div>
+        </form>
+    </fieldset>
 </body>
 
 </html>
