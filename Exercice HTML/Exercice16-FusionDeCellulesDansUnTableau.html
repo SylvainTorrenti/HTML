@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion de cellules dans un tableau</title>
+    <style type="text/css">
+        td,
+        th {
+
+            border: 1px solid black;
+
+            text-align: center;
+
+        }
+
+
+
+        table {
+
+            table-layout: fixed;
+
+            border: 1px solid black;
+
+            border-collapse: collapse;
+
+            width: 70%;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">2</td>
+                <td>3</td>
+                <td>4</td>
+                <td rowspan="3">5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="2">8</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <p>
+    <table>
+        <caption>Planning des tâches par équipe</caption>
+        <thead>
+            <tr>
+                <th rowspan="4">Equipe</th>
+                <th colspan="10">Janvier</th>
+                <th rowspan="4"></th>
+            </tr>
+            <tr>
+                <th colspan="2">Lundi</th>
+                <th colspan="2">Mardi</th>
+                <th colspan="2">mercredi</th>
+                <th colspan="2">Jeudi</th>
+                <th colspan="2">Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Equipe 1</th>
+                <th colspan="6">Tache 1</th>
+                <th colspan="4">Tache 2</th>
+                <th rowspan="2">Semaine 1</th>
+            </tr>
+            <tr>
+                <th>Equipe 2</th>
+                <th colspan="5">Tache 1</th>
+                <th colspan="5">Tache 2</th>
+            </tr>
+            <tr>
+                <th>Equipe 1</th>
+                <th>Tache 3</th>
+                <th colspan="8">Tache 4</th>
+                <th>Tache 5</th>
+                <th rowspan="2">Semaine 2</th>
+            </tr>
+            <tr>
+                <th>Equipe 2</th>
+                <th colspan="4">Tache 3</th>
+                <th colspan="6">Tache 4</th>
+            </tr>
+            <tr>
+                <th>Equipe 1</th>
+                <th colspan="5">Tache 5</th>
+                <th colspan="5">Tache 6</th>
+                <th rowspan="2">Semaine 3</th>
+
+            </tr>
+            <tr>
+                <th>Equipe 2</th>
+                <th>Tache 5</th>
+                <th colspan="9">Tache 6</th>
+            </tr>
+            <tr>
+                <th>Equipe 1</th>
+                <th colspan="6">Tache 7</th>
+                <th colspan="4">Tache 8</th>
+                <th rowspan="2">Semaine 4</th>
+            </tr>
+            <tr>
+                <th>Equipe 2</th>
+                <th colspan="5">Tache 7</th>
+                <th colspan="5">Tache 8</th>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <h1>Formulaire Quiz</h1>
+    <form action="">
+        <p>
+        <div>Question 1</div>
+        <div>
+            <legend>Culture générale. Quiz III. Quel insecte produit le miel ?</legend>
+            <input type="radio" id="L'abeille" name="drone" value="L'abeille">
+            <label for="L'abeille">L'abeille</label>
+            <input type="radio" id="Le scarabée" name="drone" value="Le scarabée">
+            <label for="Le scarabée">Le scarabée</label>
+            <input type="radio" id="Le puceron" name="drone" value="Le puceron">
+            <label for="Le puceron">Le puceron</label>
+        </div>
+        </p>
+        <p>
+        <div>Question 2</div>
+        <div><label for="fleuve-select">Égypte ancienne. Quel fleuve traverse l'Égypte ?</label>
+
+            <select name="fleuve" id="fleuve-select">
+                <option value="">--Choisir une réponse--</option>
+                <option value="Le kibo">Le kibo</option>
+                <option value="Le Danube">Le Danube</option>
+                <option value="Le Nil">Le Nil</option>
+            </select>
+        </div>
+        </p>
+        <p>
+        <div>Question 3</div>
+        <div>
+            <legend>Quels sont vos languages de programation ?:</legend>
+
+            <div>
+                <div>
+                    <input type="checkbox" id="C++" name="C++">
+                    <label for="C++">C++</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Java" name="Java">
+                    <label for="Java">Java</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="c#" name="c#">
+                    <label for="c#">c#</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="JavaScript" name="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </div>
+            </div>
+            </p>
+            <p>
+            <div>Question 4</div>
+            <div>Quel est votre intérêt pour le produit ?</div>
+            <div>
+                <input type="range" id="intérêt" name="intérêt" min="0" max="10">
+                <label for="intérêt"></label>
+            </div>
+            </p>
+            <p>
+            <div>Question 5</div>
+            <div><label>
+                    Quel est la date de la prise de la Bastille ?
+                    <input type="date" name="Bastille" />
+                </label></div>
+            </p>
+            <p>
+            <div>Question 6</div>
+            <div>Quel est votre couleur préférée ?</div>
+            <div><input type="color" id="couleur" name="couleur" value="#e66465">
+            </div>
+            </p>
+            <p>
+            <div>Informations personnelles</div>
+            <div><label for="Nom">Nom* :</label>
+                <input type="text" />
+                <label for="Prenom">Prenom* :</label>
+                <input type="text" />
+            </div>
+            <div><label for="Avatar">Avatar* :</label>
+                <input type="file" />
+            </div>
+            </p>
+            <p>
+            <div>
+                <button type="reset">
+                    Réinitialiser le formulaire
+                </button>
+                <button type="submit">
+                    Envoyer le formulaire
+                </button>
+
+            </div>
+            </p>
+    </form>
+</body>
+
+</html>
