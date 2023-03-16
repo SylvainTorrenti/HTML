@@ -10,17 +10,17 @@
 
 <body>
     <h1>Formulaire Quiz</h1>
-    <form action="">
+    <form action="./" method="get">
         <fieldset>
 
             <legend>Question 1</legend>
             <div>
                 <legend>Culture générale. Quiz III. Quel insecte produit le miel ?</legend>
-                <input type="radio" id="L'abeille" name="drone" value="L'abeille">
+                <input type="radio" id="L'abeille" name="Q1" value="L'abeille">
                 <label for="L'abeille">L'abeille</label>
-                <input type="radio" id="Le scarabée" name="drone" value="Le scarabée">
+                <input type="radio" id="Le scarabée" name="Q1" value="Le scarabée">
                 <label for="Le scarabée">Le scarabée</label>
-                <input type="radio" id="Le puceron" name="drone" value="Le puceron">
+                <input type="radio" id="Le puceron" name="Q1" value="Le puceron">
                 <label for="Le puceron">Le puceron</label>
             </div>
 
@@ -29,7 +29,7 @@
         <fieldset>
             <legend>Question 2</legend>
             <div><label for="fleuve-select">Égypte ancienne. Quel fleuve traverse l'Égypte ?</label>
-                <select name="fleuve" id="fleuve-select">
+                <select name="Q2" id="fleuve-select">
                     <option value="">--Choisir une réponse--</option>
                     <option value="Le kibo">Le kibo</option>
                     <option value="Le Danube">Le Danube</option>
@@ -45,19 +45,19 @@
                 <legend>Quels sont vos languages de programation ?:</legend>
                 <div>
                     <div>
-                        <input type="checkbox" id="C++" name="C++">
+                        <input type="checkbox" id="C++" name="Q3" value="C++">
                         <label for="C++">C++</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Java" name="Java">
+                        <input type="checkbox" id="Java" name="Q3" value="Java">
                         <label for="Java">Java</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="c#" name="c#">
+                        <input type="checkbox" id="c#" name="Q3" value="c#">
                         <label for="c#">c#</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="JavaScript" name="JavaScript">
+                        <input type="checkbox" id="JavaScript" name="Q3" value="JavaScript">
                         <label for="JavaScript">JavaScript</label>
                     </div>
                 </div>
@@ -68,38 +68,40 @@
             <legend>Question 4</legend>
             <div>Quel est votre intérêt pour le produit ?</div>
             <div>
-                <input type="range" id="intérêt" name="intérêt" min="0" max="10">
-                <label for="intérêt"></label>
+                <input type="range" id="interet" name="Q4" min="0" max="10">
+                <label for="interet"></label>
             </div>
         </fieldset>
 
 
         <fieldset>
             <legend>Question 5</legend>
-            <div><label>
-                    Quel est la date de la prise de la Bastille ?
-                    <input type="date" name="Bastille" />
-                </label></div>
+            <div>
+                <label for="dateQ5">Quel est la date de la prise de la Bastille ?</label>
+                <input type="date" name="Q5" id="dateQ5" />
+            </div>
         </fieldset>
 
 
         <fieldset>
             <legend>Question 6</legend>
-            <div>Quel est votre couleur préférée ?</div>
-            <div><input type="color" id="couleur" name="couleur" value="#e66465">
-            </div>
+            <label for="couleur">Quel est votre couleur préférée ?</label>
+            <input type="color" id="couleur" name="Q6" value="#e66465">
         </fieldset>
 
 
         <fieldset>
             <legend>Informations personnelles</legend>
-            <div><label for="Nom">Nom* :</label>
-                <input type="text" />
+            <div>
+                <label for="Nom">Nom* :</label>
+                <input type="text" name="nom" id="Nom" />
+
                 <label for="Prenom">Prenom* :</label>
-                <input type="text" />
+                <input type="text" name="prenom" id="Prenom" />
             </div>
-            <div><label for="Avatar">Avatar* :</label>
-                <input type="file" />
+            <div>
+                <label for="Avatar">Avatar* :</label>
+                <input type="file" id="Avatar" name="fileAvatar" />
             </div>
         </fieldset>
 
@@ -113,7 +115,6 @@
             </button>
 
         </div>
-
     </form>
 </body>
 
