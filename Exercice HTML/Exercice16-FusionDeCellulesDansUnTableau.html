@@ -7,26 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion de cellules dans un tableau</title>
     <style type="text/css">
+        /* Selection des <td> et des <th> */
         td,
         th {
 
             border: 1px solid black;
+            /* affiche une bordure noire de 1 pixel autour des element selectionner*/
 
             text-align: center;
+            /*met le texte au centre des element selectionner*/
 
         }
 
 
-
+        /* Selection de l'element <table> */
         table {
 
             table-layout: fixed;
+            /*definit la maniére de se comporter des lignes et colones*/
 
             border: 1px solid black;
+            /*affiche une bordure noire de 1 pixel autour de l' element selectionner*/
 
             border-collapse: collapse;
+            /*Colle les bordures entre elles*/
 
             width: 70%;
+            /*definit la largeur vis a vis de l'element parent*/
 
         }
     </style>
@@ -38,14 +45,17 @@
     <table>
         <thead>
             <tr>
+                <!-- permet de fusioner les colonnes, le nombre est definit (ici 4) -->
                 <th colspan="4">1</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <!-- permet de fusioner les lignes, le nombre est definit (ici 3) -->
                 <td rowspan="3">2</td>
                 <td>3</td>
                 <td>4</td>
+                <!-- permet de fusioner les lignes, le nombre est definit (ici 3) -->
                 <td rowspan="3">5</td>
             </tr>
             <tr>
@@ -53,6 +63,7 @@
                 <td>7</td>
             </tr>
             <tr>
+                <!-- permet de fusioner les colonnes, le nombre est definit (ici 2) -->
                 <td colspan="2">8</td>
             </tr>
         </tbody>
@@ -60,14 +71,17 @@
     </p>
     <p>
     <table>
+        <!-- pour ce tableau j'ai fait comme si le tableau était 2 fois plus grand pour permettre que certaine colonne arrive a 1/2 de la precedente (j'ai était orienter dans ce sens car je n'arrivais pas faire que les colonne prenent 1/2 de la precedente) -->
         <caption>Planning des tâches par équipe</caption>
         <thead>
             <tr>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th rowspan="4">Equipe</th>
                 <th colspan="10">Janvier</th>
                 <th rowspan="4"></th>
             </tr>
             <tr>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="2">Lundi</th>
                 <th colspan="2">Mardi</th>
                 <th colspan="2">mercredi</th>
@@ -78,17 +92,20 @@
         <tbody>
             <tr>
                 <th>Equipe 1</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="6">Tache 1</th>
                 <th colspan="4">Tache 2</th>
                 <th rowspan="2">Semaine 1</th>
             </tr>
             <tr>
                 <th>Equipe 2</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="5">Tache 1</th>
                 <th colspan="5">Tache 2</th>
             </tr>
             <tr>
                 <th>Equipe 1</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th>Tache 3</th>
                 <th colspan="8">Tache 4</th>
                 <th>Tache 5</th>
@@ -96,11 +113,13 @@
             </tr>
             <tr>
                 <th>Equipe 2</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="4">Tache 3</th>
                 <th colspan="6">Tache 4</th>
             </tr>
             <tr>
                 <th>Equipe 1</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="5">Tache 5</th>
                 <th colspan="5">Tache 6</th>
                 <th rowspan="2">Semaine 3</th>
@@ -108,17 +127,20 @@
             </tr>
             <tr>
                 <th>Equipe 2</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th>Tache 5</th>
                 <th colspan="9">Tache 6</th>
             </tr>
             <tr>
                 <th>Equipe 1</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="6">Tache 7</th>
                 <th colspan="4">Tache 8</th>
                 <th rowspan="2">Semaine 4</th>
             </tr>
             <tr>
                 <th>Equipe 2</th>
+                <!-- pour les "rowspan" et "colspan" voir plus haut -->
                 <th colspan="5">Tache 7</th>
                 <th colspan="5">Tache 8</th>
             </tr>
@@ -126,5 +148,6 @@
     </table>
     </p>
 </body>
+
 
 </html>

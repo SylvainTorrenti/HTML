@@ -11,49 +11,93 @@
 <body>
     <fieldset>
         <legend>Formulaire d'inscription</legend>
+        <!-- bous n'avions pas encore vu les action des formulaires -->
         <form action="">
             <div>
+                <!--creation d'un label
+            for= sert a definir a quel input il est associer (le HTML permet de créé cet element sans l'associé. Il va être placer visuelement au bon endroit mais il DOIT être associé)
+            le texte afficher se trouve entre les balises -->
                 <label for="Nom">Nom :</label>
+                <!--input = le type d'element créé. Là input qui permet de "rentrer" une donnée
+            type= le type de donné attendu
+            id= l'id qui permet d'associer d'autre element (il doit être unique le HTML permet d'appeler plusieurs element avec le même id mais semantiquement c'est faux)  -->
                 <input type="text" id="Nom" />
             </div>
             <div>
+                <!-- idem au label du nom -->
                 <label for="Prenom">Prenom :</label>
+                <!-- idem a l'input du nom -->
                 <input type="text" id="Prenom" />
             </div>
             <div>
+                <!-- idem au label du nom -->
                 <label for="Email">Email :</label>
+                <!-- idem a l'input du nom -->
                 <input type="email" id="Email" />
             </div>
             <div>
+                <!-- Definition du "titre"  -->
                 <legend>Sexe:</legend>
+                <!-- creation d'un input de type radio
+                     id= il doit être indiquer pour chaque element
+                     name= le nom de l'input qui n'est pas visible par l'utilisateur mais par l'administrateur
+                     value= Le nom de la valeur enregistrer lors de l'envoie du formulaire. Elle n'est pas forcement == au label et n'est pas visible par l'utilisateur -->
                 <input type="radio" id="Masculin" name="drone" value="Masculin">
+                <!-- creation d'un label 
+                     for= sert a definir a quel input il est associer 
+                     le texte afficher se trouve entre les balises-->
                 <label for="Masculin">Masculin</label>
+                <!-- idem a l'input de masculin -->
                 <input type="radio" id="Feminin" name="drone" value="Feminin">
+                <!-- idem au label de masculin -->
                 <label for="Feminin">Feminin</label>
+                <!-- idem a l'input de masculin -->
                 <input type="radio" id="Indefini" name="drone" value="Indefini">
+                <!-- idem au label de masculin -->
                 <label for="Indefini">Indefini</label>
             </div>
+            <!-- idem au label de masculin -->
             <div><label for="Photo">Photo :</label>
+                <!-- Input de type file qui permet a l'utilisateur de selectionner un fichier present sur ça machine -->
                 <input type="file" id="Photo" />
             </div>
+            <!-- idem au label de masculin -->
             <div><label for="country-select">Pays</label>
+                <!-- creation d'un element select qui permet de selectionner une valeur dans une liste déroulante -->
                 <select name="country" id="country-select">
+                    <!-- La premiére option n'a pas de value et sert principalement a indiquer quel type de donnée l'utilisateur dois choisir (là un pays) -->
                     <option value="">--Choisir un pays--</option>
+                    <!-- option permet de mettre des choix dans la liste
+                         value= la valeur que cette option represente, elle n'est pas visible par l'utilisateur
+                         ce que l'utilisateur vois est entre les balises -->
                     <option value="France">France</option>
+                    <!-- se refere a l'option precedente -->
                     <option value="Espagne">Espagne</option>
+                    <!-- se refere a l'option precedente -->
                     <option value="Royaume-Uni">Royaume-Uni</option>
                 </select>
             </div>
+            <!-- idem au label de masculin -->
             <div><label for="Langages front">Langages préférés:
+                    <!-- creation d'un element select qui permet de selectionner une valeur dans une liste
+                     multiple size permet l'affichage de toutes les options dans une boite scrolable et ainsi permettre la selection de plusieurs element à la foi en maintenant CTRL -->
                     <select name="Langages front" multiple size="4" id="Langages front">
+                        <!-- creation d'un groupe d'option qui a pour titre le label (ici Langages front) -->
                         <optgroup label="Langages front">
+                            <!-- se refere a l'option du select precedent -->
                             <option value="HTML">HTML</option>
+                            <!-- se refere a l'option du select precedent -->
                             <option value="CSS">CSS</option>
+                            <!-- se refere a l'option du select precedent -->
                             <option value="JavaScript">JavaScript</option>
                         </optgroup>
+                        <!-- creation d'un groupe d'option qui a pour titre le label (ici Langages back) -->
                         <optgroup label="Langages back">
+                            <!-- se refere a l'option du select precedent -->
                             <option value="PhP">PhP</option>
+                            <!-- se refere a l'option du select precedent -->
                             <option value="Python">Python</option>
+                            <!-- se refere a l'option du select precedent -->
                             <option value="Java EE">Java EE</option>
                         </optgroup>
                     </select>
@@ -62,6 +106,7 @@
             <div>
                 <legend>Domaine d'activités:</legend>
                 <div>
+                    <!-- creation d'un input de type checkbox qui permet la selection de plusieurs items simultanement -->
                     <input type="checkbox" id="Informatique" name="Informatique">
                     <label for="Informatique">Informatique</label>
                     <input type="checkbox" id="Gestion" name="Gestion">
@@ -70,9 +115,11 @@
                     <label for="Pédagogie">Pédagogie</label>
                 </div>
                 <div>
+                    <!-- creation d'un boutton de type "envoie" -->
                     <button type="submit">
                         Envoyer
                     </button>
+                    <!-- creation d'un boutton de type "reset" -->
                     <button type="reset">
                         Effacer
                     </button>

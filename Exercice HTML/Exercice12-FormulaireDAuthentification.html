@@ -10,16 +10,28 @@
 
 <body>
     <h1>Authentification</h1>
+    <!-- creation d'un formulaire de login avec la methode post -->
     <form action="" method="post">
+        <!--label = le texte afficher pour l'input
+            for= sert a definir a quel input il est associer (le HTML permet de créé cet element sans l'associé. Il va être placer visuelement au bon endroit mais il DOIT être associé)
+            le texte afficher se trouve entre les balises -->
         <label for="Login">Login :</label>
-
+        <!--input = le type d'element créé. Là input qui permet de "rentrer" une donnée
+            type= le type de donné attendu
+            id= l'id qui permet d'associer d'autre element (il doit être unique le HTML permet d'appeler plusieurs element avec le même id mais semantiquement c'est faux)  
+            name= Le nom de l'input pour permettre une meilleur comprehension au premier regard
+            maxlength= permet de definir une longeur maximum dans ce cas l'utilisateur sera bloquer à 12 caractéres
+            required permet de rendre l'input obligatoire-->
         <input type="text" id="Login" name="login" maxlength="12" required />
+        <!-- Pareil que pour le label du login -->
         <label for="password">Mot de passe :</label>
-
+        <!-- Pareil que pour l'input du login -->
         <input type="password" id="password" name="pwd" maxlength="10" required />
+        <!-- creation d'un boutton de type "envoie" -->
         <button type="submit">
             Envoyer
         </button>
+        <!-- creation d'un boutton de type "reset" -->
         <button type="reset">
             Effacer
         </button>

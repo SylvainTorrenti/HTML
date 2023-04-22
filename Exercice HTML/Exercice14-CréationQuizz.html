@@ -9,13 +9,22 @@
 </head>
 
 <body>
+    <!-- titre du formulaire -->
     <h1>Formulaire Quiz</h1>
     <form action="./" method="get">
         <fieldset>
-
+            <!-- indiquez une legend permet une mielleur visualisation -->
             <legend>Question 1</legend>
             <div>
+                <!-- creation d'un input de type radio
+                id= il doit être indiquer pour chaque element
+                name= le nom de l'input (dans ce cas drone car il ne se met que pour la selection de l'utilisateur)
+                value= Le nom de la valeur enregistrer lors de l'envoie du formulaire. Elle n'est pas forcement == au label et n'est pas visible par l'utilisateur -->
                 <legend>Culture générale. Quiz III. Quel insecte produit le miel ?</legend>
+                <!-- creation d'un input de type radio
+                     id= il doit être indiquer pour chaque element
+                     name= le nom de l'input qui n'est pas visible par l'utilisateur mais par l'administrateur qui lui permet de meiux faire le lien entre le nom et la valeur envoyé
+                     value= Le nom de la valeur enregistrer lors de l'envoie du formulaire. Elle n'est pas forcement == au label et n'est pas visible par l'utilisateur -->
                 <input type="radio" id="L'abeille" name="Q1" value="L'abeille">
                 <label for="L'abeille">L'abeille</label>
                 <input type="radio" id="Le scarabée" name="Q1" value="Le scarabée">
@@ -29,6 +38,7 @@
         <fieldset>
             <legend>Question 2</legend>
             <div><label for="fleuve-select">Égypte ancienne. Quel fleuve traverse l'Égypte ?</label>
+                <!-- creation d'une liste déroulante pour les réponses -->
                 <select name="Q2" id="fleuve-select">
                     <option value="">--Choisir une réponse--</option>
                     <option value="Le kibo">Le kibo</option>
@@ -42,6 +52,7 @@
         <fieldset>
             <legend>Question 3</legend>
             <div>
+                <!-- creation d'une liste a choix multiple pour les réponses -->
                 <legend>Quels sont vos languages de programation ?:</legend>
                 <div>
                     <div>
@@ -66,6 +77,8 @@
 
         <fieldset>
             <legend>Question 4</legend>
+            <!-- creation d'un outil "range" (echelle de valeur)
+                 min & max definissent la valeur minimal et maximal de l'echelle. la valeur choisit est renvoyer à l'administrateur -->
             <div>Quel est votre intérêt pour le produit ?</div>
             <div>
                 <input type="range" id="interet" name="Q4" min="0" max="10">
@@ -77,6 +90,7 @@
         <fieldset>
             <legend>Question 5</legend>
             <div>
+                <!-- creation d'un outil date qui permet de choisir ou de rentrer un date (si l'utilisateur click sur l'icone de l'agenda, il s'ouvre et permet de naviguer entre les années et les mois facilement) -->
                 <label for="dateQ5">Quel est la date de la prise de la Bastille ?</label>
                 <input type="date" name="Q5" id="dateQ5" />
             </div>
@@ -85,12 +99,15 @@
 
         <fieldset>
             <legend>Question 6</legend>
+            <!-- creation d'un outil de selection de couleur
+                 l'utilisateur peut ainsi choisir de selectionner la couleur en deplaçant le curseur ou en entrant directement le code RGB  -->
             <label for="couleur">Quel est votre couleur préférée ?</label>
             <input type="color" id="couleur" name="Q6" value="#e66465">
         </fieldset>
 
 
         <fieldset>
+            <!-- Creation comme pour l'exercice 12-Formulaire d'authentification -->
             <legend>Informations personnelles</legend>
             <div>
                 <label for="Nom">Nom* :</label>
@@ -107,9 +124,11 @@
 
 
         <div>
+            <!-- creation d'un boutton de type "reset" -->
             <button type="reset">
                 Réinitialiser le formulaire
             </button>
+            <!-- creation d'un boutton de type "envoie" -->
             <button type="submit">
                 Envoyer le formulaire
             </button>

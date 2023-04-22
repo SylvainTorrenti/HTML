@@ -11,7 +11,9 @@
 <body>
     <p>
     <h3>Menu du Resto AMIO</h3>
+    <!-- creation d'une unordred liste avec <ul> -->
     <ul>
+        <!-- mise en gras avec <b> -->
         <li><b>Lundi :</b>hachis Parmentier</li>
         <li><b>Mardi :</b>saucisse de Strasbourg & gnocchis</li>
         <li><b>Mercredi :</b>rôtis de veau & brocolis</li>
@@ -21,9 +23,11 @@
     </p>
     <p>
     <h3>Classement de Ligue 1</h3>
+    <!-- creation d'une ordered liste avec comme puce des chiffres -->
     <ol type="1">
         <li>Nancy - <i>16 points</i></li>
         <li>Lyon - <i>15 points</i></li>
+        <!-- definit la valeur de la puce à 15 avec "value="15"" -->
         <li value="15">Bordaux - <i>15 points</i></li>
         <li>Rennes - <i>15 points</i></li>
         <li>Valencienne - <i>15 points</i></li>
@@ -75,19 +79,23 @@
     </p>
     <p>
     <h3>Plan du cour</h3>
+    <!-- creation d'une ordered liste avec comme puce des chiffres romains -->
     <ol type="I">
         <li>Introduction</li>
+        <!-- creation d'une ordered liste dans un <li> avec comme puce des lettre qui commence a "c" avec start="3" (la 3eme lettre)  -->
         <li>Le langage HTML <ol type="a" start="3">
                 <li>Généralités</li>
                 <li>Les éléments blocks</li>
                 <li>Etc.</li>
             </ol>
         </li>
+        <!-- creation d'une ordered liste avec comme puce des "i" -->
         <li>éléments de design Web, standards, acessibilité <ol type="i">
                 <li>Design Web</li>
                 <li>Standards du W3C</li>
             </ol>
         </li>
+        <!-- creation d'une ordered liste avec comme puce des lettre majuscule en commencent en sens inverse -->
         <li>Feuilles de style en cascade (CSS) <ol type="A" reversed>
                 <li>Généralités</li>
                 <li>Sélecteurs et classes de style</li>
@@ -101,6 +109,7 @@
     <ol>
         <li>Ceci est le premier élément.</li>
         <li>Ceci est le deuxième élément. <ul>
+                <!-- creation d'une ordered liste avec comme puce des chiffre en commencent par "22" en sens inverse -->
                 <li>Ceci est le premier sous-élément du deuxième élément. <ol start="22" reversed>
                         <li>Et ceci est un sous-élément numéroté d'un sous-élément.</li>
                         <li>Et ceci est un autre sous-élément numéroté du même sous-élément.</li>
